@@ -17,6 +17,7 @@ int main() {
     const char *repo_dir = ".repo";  // Root directory of the repository
     const char *objects_dir = ".repo/objects"; // Objects directory (for file tracking)
     const char *refs_dir = ".repo/refs"; // References directory (for branches)
+    const char *heads_dir = ".repo/refs/heads"; // Heads subdirectory (for branches)
     const char *config_file = ".repo/config"; // Configuration file
 
     // Step 1: Check if the repository already exists
@@ -31,8 +32,10 @@ int main() {
         return EXIT_FAILURE; // Fail if the directory creation fails
     }
 
-    // Step 3: Create the objects and refs subdirectories
-    if (create_directory(objects_dir) != 0 || create_directory(refs_dir) != 0) {
+    // Step 3: Create the objects, refs, and refs/heads subdirectories
+    if (create_directory(objects_dir) != 0 ||
+        create_directory(refs_dir) != 0 ||
+        create_directory(heads_dir) != 0) {
         return EXIT_FAILURE; // Fail if the subdirectories cannot be created
     }
 
@@ -52,12 +55,40 @@ int main() {
     return EXIT_SUCCESS;
 }
 
-// Function to create a directory and handle errors
+// Function to create directories recursively (like `mkdir -p` in shell)
 int create_directory(const char *dir_path) {
-    if (mkdir(dir_path, 0755) != 0) {
-        perror("Error creating directory");
-        return -1; // Return -1 on error
+    char temp[256];
+    char *ptr = NULL;
+    size_t len;
+
+    // Copy the directory path to temp, and make sure it is null-terminated
+    strncpy(temp, dir_path, sizeof(temp));
+    temp[sizeof(temp) - 1] = '\0';
+    len = strlen(temp);
+
+    // If the path ends with a '/', remove it to ensure the path is correct
+    if (temp[len - 1] == '/') {
+        temp[len - 1] = '\0';
     }
+
+    // Create all directories in the given path
+    for (ptr = temp + 1; *ptr; ptr++) {
+        if (*ptr == '/') {
+            *ptr = '\0'; // Temporarily null-terminate for `mkdir`
+            if (mkdir(temp, 0755) != 0 && errno != EEXIST) {
+                perror("Error creating directory");
+                return -1;
+            }
+            *ptr = '/'; // Restore the path
+        }
+    }
+
+    // Finally, create the last directory
+    if (mkdir(temp, 0755) != 0 && errno != EEXIST) {
+        perror("Error creating directory");
+        return -1;
+    }
+
     return 0; // Return 0 on success
 }
 
