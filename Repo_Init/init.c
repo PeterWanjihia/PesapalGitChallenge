@@ -6,6 +6,9 @@
 #include <time.h>
 #include "init.h"
 
+// Define the staging file path
+#define STAGING_FILE_PATH ".repo/staging/staged_files.txt"
+
 // Function to create directories recursively
 int create_directory(const char *dir_path) {
     char temp[256];
@@ -39,7 +42,7 @@ int create_directory(const char *dir_path) {
     return 0;
 }
 
-// Function to create a file with a given content
+// Function to create a file with given content
 int create_file(const char *file_path, const char *content) {
     FILE *file = fopen(file_path, "w");
     if (!file) {
@@ -59,7 +62,7 @@ void generate_repo_id(char *repo_id) {
     snprintf(repo_id, 41, "%lx", (long)t);
 }
 
-// Function to create an initial commit placeholder
+// Function to create the initial commit placeholder
 void create_initial_commit() {
     const char *commit_file = ".repo/refs/heads/main";
     if (create_file(commit_file, "") != 0) {
@@ -80,12 +83,38 @@ void create_config_file() {
     printf("Config file created at '%s'.\n", config_path);
 }
 
+// Ensure that the staging directory and metadata file exist
+int ensure_staging_directory_exists(void) {
+    struct stat st = {0};
+
+    // Check if the .repo/staging directory exists
+    if (stat(".repo/staging", &st) == -1) {
+        if (mkdir(".repo/staging", 0755) == -1) {
+            perror("Error creating staging directory");
+            return -1;
+        }
+    }
+
+    // Check if the staged_files.txt exists; if not, create it
+    if (stat(STAGING_FILE_PATH, &st) == -1) {
+        FILE *file = fopen(STAGING_FILE_PATH, "w");
+        if (!file) {
+            perror("Error creating staging metadata file");
+            return -1;
+        }
+        fclose(file);
+    }
+
+    return 0;
+}
+
 // Function to initialize the repository
 int initialize_repository() {
     const char *repo_dir = ".repo";
     const char *objects_dir = ".repo/objects";
     const char *refs_dir = ".repo/refs";
     const char *heads_dir = ".repo/refs/heads";
+    const char *staging_dir = ".repo/staging";  // Staging directory
 
     struct stat st = {0};
     if (stat(repo_dir, &st) == 0) {
@@ -93,10 +122,17 @@ int initialize_repository() {
         return EXIT_FAILURE;
     }
 
+    // Create the necessary directories, including the staging directory
     if (create_directory(repo_dir) != 0 ||
         create_directory(objects_dir) != 0 ||
         create_directory(refs_dir) != 0 ||
-        create_directory(heads_dir) != 0) {
+        create_directory(heads_dir) != 0 ||
+        create_directory(staging_dir) != 0) {  // Create staging directory
+        return EXIT_FAILURE;
+    }
+
+    // Ensure the staging directory and metadata file are created
+    if (ensure_staging_directory_exists() != 0) {
         return EXIT_FAILURE;
     }
 
@@ -104,6 +140,7 @@ int initialize_repository() {
     generate_repo_id(repo_id);
     printf("Generated repository ID: %s\n", repo_id);
 
+    // Create initial commit and config files
     create_initial_commit();
     create_config_file();
 

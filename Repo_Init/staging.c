@@ -3,30 +3,31 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-// Ensure that the staging directory and metadata file exist
-int ensure_staging_directory_exists(void) {
-    struct stat st = {0};
+// // Ensure that the staging directory and metadata file exist
+// int ensure_staging_directory_exists(void) {
+//     struct stat st = {0};
 
-    // Check if the .repo/staging directory exists
-    if (stat(".repo/staging", &st) == -1) {
-        if (mkdir(".repo/staging", 0755) == -1) {
-            perror("Error creating staging directory");
-            return -1;
-        }
-    }
+//     // Check if the .repo/staging directory exists
+//     if (stat(".repo/staging", &st) == -1) {
+//         if (mkdir(".repo/staging", 0755) == -1) {
+//             perror("Error creating staging directory");
+//             return -1;
+//         }
+//     }
 
-    // Check if the staged_files.txt exists; if not, create it
-    if (stat(STAGING_FILE_PATH, &st) == -1) {
-        FILE *file = fopen(STAGING_FILE_PATH, "w");
-        if (!file) {
-            perror("Error creating staging metadata file");
-            return -1;
-        }
-        fclose(file);
-    }
+//     // Check if the staged_files.txt exists; if not, create it
+//     if (stat(STAGING_FILE_PATH, &st) == -1) {
+//         FILE *file = fopen(STAGING_FILE_PATH, "w");
+//         if (!file) {
+//             perror("Error creating staging metadata file");
+//             return -1;
+//         }
+//         fclose(file);
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
+
 
 // Add a file to the staging area
 int store_in_staging_area(const char *file_path, const char *file_hash) {
