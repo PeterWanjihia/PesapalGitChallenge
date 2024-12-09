@@ -35,7 +35,6 @@ int add_file(const char *file_path) {
     return -1;  // File was not found in the index
 }
 
-
 int main(int argc, char *argv[]) {
     if (argc < 2) {
         fprintf(stderr, "Usage: %s <command> [<args>]\n", argv[0]);
@@ -56,6 +55,21 @@ int main(int argc, char *argv[]) {
         // Call the `add_file()` to hash and store the file in both index and staging
         const char *file_path = argv[2];
         return add_file(file_path);
+
+    // Handle the `remove` command
+    } else if (strcmp(argv[1], "remove") == 0) {
+        if (argc < 3) {
+            fprintf(stderr, "Usage: %s remove <file>\n", argv[0]);
+            return 1;
+        }
+
+        const char *file_path = argv[2];
+        return remove_from_staging_area(file_path);  // Call the remove function for staging area
+
+    // Handle the `list` command to list staged files
+    } else if (strcmp(argv[1], "list") == 0) {
+        list_staged_files();  // List the staged files
+        return 0;
 
     } else {
         fprintf(stderr, "Unknown command: %s\n", argv[1]);
