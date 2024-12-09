@@ -2,6 +2,7 @@
 #define HASHING_H
 
 #include <stddef.h>
+#define HASH_LENGTH 64  // Define HASH_LENGTH
 
 // Check if the file exists and is accessible
 int check_file_exists(const char *file_path);
@@ -28,3 +29,5 @@ int write_metadata(const char *file_path, const char *hash);
 int handle_add_command(const char *file_path);
 
 #endif
+
+
