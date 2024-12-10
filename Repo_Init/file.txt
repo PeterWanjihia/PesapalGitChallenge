@@ -1,12 +1,1 @@
-
-It looks like you're encountering an issue with how your program handles adding the
- same file multiple times to the staging area, especially after modifying its contents. 
- From what you've shared, it s#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>     unimportant
-#include <errno.h>
-#include <openssl/sha.h>
-
-#define STAGING_FILE_PATH ".repo/staging/staged_files.txt"
-Jeremy Clarkson is a winner 
-
+changed made some changes here nd here jeremyzaaaclakrsjsxxxxxxxxxxx

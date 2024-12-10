@@ -6,7 +6,4 @@ whats ups #include <errno.h>
 // F
 #include <errno.h>
 #include <openssl/sha.h>
-
-#define STAGING_FILE_PATH ".repo/staging/staged_files.txt"
-
-// F
+and here felic hhhhhhhhhhhhhhhhhhhhhh
