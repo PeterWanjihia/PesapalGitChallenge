@@ -11,5 +11,7 @@ void generate_hash(const char *filename, char *hash_out);
 void log_message(const char *message);
 int store_in_staging_area(const char *file_path, const char *file_hash);
 int remove_from_staging_area(const char *file_path);
+void list_staged_files(void);
+
 
 #endif // STAGE_H

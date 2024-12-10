@@ -3,14 +3,19 @@
 #include <string.h>
 #include "stage.h"
 
+// Main function to handle command-line arguments
 int main(int argc, char *argv[]) {
-    if (argc < 3) {
+    if (argc < 2) {  // We need at least 2 arguments: command and possibly file paths
         fprintf(stderr, "Usage: %s <command> <file_paths...>\n", argv[0]);
         return EXIT_FAILURE;
     }
 
-    // Handle commands
+    // Handle the 'add' command
     if (strcmp(argv[1], "add") == 0) {
+        if (argc < 3) {  // We need at least one file to add
+            fprintf(stderr, "Usage: %s add <file_paths...>\n", argv[0]);
+            return EXIT_FAILURE;
+        }
         // Loop through all file arguments passed
         for (int i = 2; i < argc; i++) {
             char file_path[512];
@@ -34,12 +39,20 @@ int main(int argc, char *argv[]) {
 
             printf("File '%s' added to staging area.\n", file_path);
         }
-    } else if (strcmp(argv[1], "remove") == 0) {
+    }
+    // Handle the 'remove' command
+    else if (strcmp(argv[1], "remove") == 0) {
+        if (argc < 3) {  // We need at least one file to remove
+            fprintf(stderr, "Usage: %s remove <file_paths...>\n", argv[0]);
+            return EXIT_FAILURE;
+        }
+        // Loop through all file arguments passed
         for (int i = 2; i < argc; i++) {
             char file_path[512];
-
-            // Copy the file path from the command-line argument
             strcpy(file_path, argv[i]);
+
+            // Log the action
+            printf("Removing file '%s' from staging area...\n", file_path);
 
             // Remove the file from the staging area
             int result = remove_from_staging_area(file_path);
@@ -50,7 +63,13 @@ int main(int argc, char *argv[]) {
 
             printf("File '%s' removed from staging area.\n", file_path);
         }
-    } else {
+    }
+    // Handle the 'stagedlist' command
+    else if (strcmp(argv[1], "stagedlist") == 0) {
+        // List all staged files
+        list_staged_files();
+    }
+    else {
         fprintf(stderr, "Unknown command: %s\n", argv[1]);
         return EXIT_FAILURE;
     }

@@ -194,3 +194,20 @@ int remove_from_staging_area(const char *file_path) {
     log_message("File successfully removed from staging area.");
     return 0;
 }
+
+// Function to list all staged files
+void list_staged_files(void) {
+    FILE *file = fopen(STAGING_FILE_PATH, "r");
+    if (!file) {
+        perror("Error opening staging metadata file");
+        return;
+    }
+
+    char line[1024];
+    printf("Staged files:\n");
+    while (fgets(line, sizeof(line), file)) {
+        printf("%s", line);
+    }
+
+    fclose(file);
+}
