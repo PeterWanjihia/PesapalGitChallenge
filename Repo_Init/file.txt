@@ -1,4 +1,7 @@
-#include <stdio.h>
+
+It looks like you're encountering an issue with how your program handles adding the
+ same file multiple times to the staging area, especially after modifying its contents. 
+ From what you've shared, it s#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <errno.h>
@@ -137,39 +140,4 @@ int store_in_staging_area(const char *file_path, const char *file_hash) {
     return 0;
 }
 
-// Main function to handle command-line arguments
-int main(int argc, char *argv[]) {
-    if (argc < 3) {
-        fprintf(stderr, "Usage: %s add <file_path>\n", argv[0]);
-        return EXIT_FAILURE;
-    }
 
-    // Check the command passed (e.g., "add")
-    if (strcmp(argv[1], "add") == 0) {
-        char file_path[512];
-        char file_hash[65];
-
-        // Copy the file path from the command-line argument
-        strcpy(file_path, argv[2]);
-
-        // Generate the file hash
-        generate_hash(file_path, file_hash);
-
-        // Log the action
-        log_message("Adding file to staging area...");
-
-        // Store the file in the staging area
-        int result = store_in_staging_area(file_path, file_hash);
-        if (result != 0) {
-            fprintf(stderr, "Error adding file to staging area.\n");
-            return EXIT_FAILURE;
-        }
-
-        log_message("File added to staging area.");
-    } else {
-        fprintf(stderr, "Unknown command: %s\n", argv[1]);
-        return EXIT_FAILURE;
-    }
-
-    return EXIT_SUCCESS;
-}

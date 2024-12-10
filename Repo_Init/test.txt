@@ -1,4 +1,0 @@
-original text
-this is file kkks 
-gcc: The C compiler.
--Wall: Enables all warning messages to ensure the code is error-free.
