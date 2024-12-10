@@ -3,8 +3,7 @@
 #include <string.h>
 #include <errno.h>
 #include <openssl/sha.h>
-
-#define STAGING_FILE_PATH ".repo/staging/staged_files.txt"
+#include "stage.h"
 
 // Function to normalize file path by removing trailing slashes
 void normalize_path(char *path) {
@@ -137,39 +136,61 @@ int store_in_staging_area(const char *file_path, const char *file_hash) {
     return 0;
 }
 
-// Main function to handle command-line arguments
-int main(int argc, char *argv[]) {
-    if (argc < 3) {
-        fprintf(stderr, "Usage: %s add <file_path>\n", argv[0]);
-        return EXIT_FAILURE;
+// Function to remove a file from the staging area
+int remove_from_staging_area(const char *file_path) {
+    if (file_path == NULL) {
+        fprintf(stderr, "Invalid file path.\n");
+        return -1;
     }
 
-    // Check the command passed (e.g., "add")
-    if (strcmp(argv[1], "add") == 0) {
-        char file_path[512];
-        char file_hash[65];
+    FILE *file = fopen(STAGING_FILE_PATH, "r");
+    if (!file) {
+        perror("Error opening staging metadata file");
+        return -1;
+    }
 
-        // Copy the file path from the command-line argument
-        strcpy(file_path, argv[2]);
+    // Create a temporary file to write the updated staging information
+    FILE *temp_file = fopen(".repo/staging/temp.txt", "w");
+    if (!temp_file) {
+        perror("Error creating temporary staging file");
+        fclose(file);
+        return -1;
+    }
 
-        // Generate the file hash
-        generate_hash(file_path, file_hash);
+    char line[1024];
+    int file_found = 0;
+    while (fgets(line, sizeof(line), file)) {
+        char stored_file[512];
+        if (sscanf(line, "%s", stored_file) == 1) {
+            normalize_path(stored_file);  // Normalize the stored file path
 
-        // Log the action
-        log_message("Adding file to staging area...");
-
-        // Store the file in the staging area
-        int result = store_in_staging_area(file_path, file_hash);
-        if (result != 0) {
-            fprintf(stderr, "Error adding file to staging area.\n");
-            return EXIT_FAILURE;
+            // If the file path matches, skip the line (remove it)
+            if (strcmp(stored_file, file_path) == 0) {
+                file_found = 1;
+                log_message("Removing file from staging area...");
+                continue;
+            }
         }
 
-        log_message("File added to staging area.");
-    } else {
-        fprintf(stderr, "Unknown command: %s\n", argv[1]);
-        return EXIT_FAILURE;
+        // Copy remaining lines to the temporary file
+        fputs(line, temp_file);
     }
 
-    return EXIT_SUCCESS;
+    fclose(file);
+    fclose(temp_file);
+
+    // If the file wasn't found, return an error
+    if (!file_found) {
+        fprintf(stderr, "File '%s' not found in staging area.\n", file_path);
+        return -1;
+    }
+
+    // Replace the original staging file with the updated one
+    if (rename(".repo/staging/temp.txt", STAGING_FILE_PATH) != 0) {
+        perror("Error renaming temporary staging file");
+        return -1;
+    }
+
+    log_message("File successfully removed from staging area.");
+    return 0;
 }
