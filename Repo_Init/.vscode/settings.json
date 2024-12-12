@@ -1,6 +1,8 @@
 {
   "files.associations": {
     "*.html": "html",
-    "staging.h": "c"
+    "staging.h": "c",
+    "sha.h": "c",
+    "extract_argument.h": "c"
   }
 }

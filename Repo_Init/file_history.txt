@@ -1,0 +1,1000 @@
+ 1048  touch server.py
+ 1049  nano server.py 
+ 1050  python3 server.py 
+ 1051  clear
+ 1052  python3 server.py 
+ 1053  mkdir server_folder
+ 1054  python3 server.py 
+ 1055  clear
+ 1056  cd ..
+ 1057  deactivate
+ 1058  clear
+ 1059  cd ..
+ 1060  cd Assembly/
+ 1061  ls
+ 1062  code .
+ 1063  sudo systemctl restart NetworkManager
+ 1064  clear
+ 1065  mkdir Pesapal 
+ 1066  cd Pesapal/
+ 1067  ls
+ 1068  clear
+ 1069  sudo systemctl restart NetworkManager
+ 1070  clear
+ 1071  git init
+ 1072  ls -a
+ 1073  cd .git/
+ 1074  ls
+ 1075  clear
+ 1076  ls
+ 1077  ccd branches/
+ 1078  clear
+ 1079  ls
+ 1080  cd branches/
+ 1081  ls
+ 1082  cd ..
+ 1083  cd hooks/
+ 1084  ls
+ 1085  cd .
+ 1086  cd ..
+ 1087  cd info/
+ 1088  ls
+ 1089  cd ..
+ 1090  cd objects/
+ 1091  ls
+ 1092  cd ..
+ 1093  cd refs/
+ 1094  ls
+ 1095  cdclear
+ 1096  clear
+ 1097  cd ..
+ 1098  ls
+ 1099  cd ..
+ 1100  clear
+ 1101  ls Repo_Init/
+ 1102  ls
+ 1103  clear
+ 1104  cd Repo_Init/
+ 1105  git commit -m "first commit"
+ 1106  git branch
+ 1107  git remote add origin https://github.com/PeterWanjihia/PesapalGitChallenge.git
+ 1108  git push -u origin main
+ 1109  git push -u origin master
+ 1110  git push  origin master
+ 1111  git status
+ 1112  cear
+ 1113  clear
+ 1114  cd ..
+ 1115  git commit -m "first commit"
+ 1116  git remote add origin https://github.com/PeterWanjihia/PesapalGitChallenge.git
+ 1117  clear
+ 1118  git commit -m "first commit"
+ 1119  ls
+ 1120  code .
+ 1121  git add .
+ 1122  git status
+ 1123  git commit -m "first commit"
+ 1124  git push origin master
+ 1125  clear
+ 1126  cd .git
+ 1127  ls
+ 1128  cat config
+ 1129  clear
+ 1130  ls
+ 1131  cat HEAD
+ 1132  cd branches/
+ 1133  ls
+ 1134  clear
+ 1135  cd ..
+ 1136  cd objects/
+ 1137  ls
+ 1138  cd ..
+ 1139  cd refs/\ls
+ 1140  cd refs/
+ 1141  ls
+ 1142  cd heads/
+ 1143  ls
+ 1144  cd ..
+ 1145  cd remotes/
+ 1146  ls
+ 1147  cd origin/
+ 1148  ls
+ 1149  cd ..
+ 1150  cd tags/
+ 1151  ls
+ 1152  clear
+ 1153  ls
+ 1154  clear
+ 1155  cd ..
+ 1156  clear
+ 1157  cd ..
+ 1158  ls
+ 1159  cd Repo_Init/
+ 1160  ls 
+ 1161  git status
+ 1162  git add .
+ 1163  git status 
+ 1164  git commit -m " implementation  of repo initialization"
+ 1165  git push origin master
+ 1166  clear
+ 1167  ls
+ 1168  gcc -o repo_init repo_init.c
+ 1169  gcc -o file file.c
+ 1170  ./file
+ 1171  ls
+ 1172  ls -a
+ 1173  rm -rf .repo
+ 1174  ls
+ 1175  ls -a
+ 1176  clear
+ 1177  gcc -o file file.c
+ 1178  ./file
+ 1179  ls -a
+ 1180  ./file
+ 1181  ls
+ 1182  clear
+ 1183  cd .repo
+ 1184  ls
+ 1185  cd ..
+ 1186  clear
+ 1187  cd .repo
+ 1188  ls
+ 1189  cd refs/
+ 1190  lss
+ 1191  ls
+ 1192  cd heads
+ 1193  ls
+ 1194  cat main 
+ 1195  clear
+ 1196  cd ..
+ 1197  ls
+ 1198  clear
+ 1199  git add .
+ 1200  git status
+ 1201  git commit -m "ReadMe and code for repository initialization"
+ 1202  git push origin master
+ 1203  clear
+ 1204  ls
+ 1205  clear
+ 1206  sudo systemctl restart NetworkManager
+ 1207  clear
+ 1208  sudo systemctl restart NetworkManager
+ 1209  clear
+ 1210  sudo systemctl restart NetworkManager
+ 1211  clear
+ 1212  cd ..
+ 1213  cd Assembly/
+ 1214  ls
+ 1215  code .
+ 1216  java -jar Mars.jar
+ 1217  cd ..
+ 1218  clear
+ 1219  cd Pesapal/
+ 1220  ls
+ 1221  code .
+ 1222  sudo systemctl restart NetworkManager
+ 1223  clear
+ 1224  sudo systemctl restart NetworkManager
+ 1225  clear
+ 1226  ls
+ 1227  cd Repo_Init/
+ 1228  ls
+ 1229  gcc -o program main.c init.c
+ 1230  ./program init
+ 1231  ls
+ 1232  ls -a
+ 1233  ./program init
+ 1234  clear
+ 1235  sudo systemctl restart NetworkManager
+ 1236  clear
+ 1237  sudo systemctl restart NetworkManager
+ 1238  clear
+ 1239  touch hashing.h hashing.c
+ 1240  clear
+ 1241  gcc -o program main.c hashing.c -lssl -lcrypto
+ 1242  clear
+ 1243  ./program init
+ 1244  gcc -o program main.c init.c
+ 1245  clear
+ 1246  ./program  init
+ 1247  clear
+ 1248  echo "This is a test file." > test_file.txt
+ 1249  ls
+ 1250  gcc -o test_hashing test_hashing.c hashing.c -lssl -lcrypto
+ 1251  gcc -o testing_hashing test_hashing.c hashing.c -lssl -lcrypto
+ 1252  gcc -o test_hashing test_hashing.c hashing.c -lssl -lcrypto
+ 1253  clear
+ 1254  ls
+ 1255  gcc -o test_hashing test_hashing.c hashing.c -lssl -lcrypto
+ 1256  ls
+ 1257  clear
+ 1258  gcc -o test_hashing test_hashing.c hashing.c -lssl -lcrypto
+ 1259  ls
+ 1260  ./test_hashing
+ 1261  sudo systemctl restart NetworkManager
+ 1262  clear
+ 1263  gcc -o program main.c init.c hashing.c -lssl -lcrypto
+ 1264  ./program init
+ 1265  echo "This is a test file." > test_file.txt
+ 1266  ./program add test_file.txt
+ 1267  cat .repo/objects/index
+ 1268  echo "Another test file." > another_file.txt
+ 1269  ./program add another_file.txt
+ 1270  cat .repo/objects/index
+ 1271  clear
+ 1272  ls
+ 1273  rm another_file.txt  test_file.txt 
+ 1274  clear
+ 1275  ls
+ 1276  sudo systemctl restart NetworkManger
+ 1277  sudo systemctl restart NetworkManager
+ 1278  clear
+ 1279  echo "This is a test file." > test_file.txt
+ 1280  ./program add another_file.txt
+ 1281  ./program add test_file.txt
+ 1282  ls
+ 1283  ls  -a
+ 1284  cd .repo
+ 1285  ls
+ 1286  cd objects
+ 1287  ls
+ 1288  cat index
+ 1289  sudo systemctl restart NetworkManager
+ 1290  clear
+ 1291  cd ..
+ 1292  clear
+ 1293  git status
+ 1294  git add .
+ 1295  git commit -m "made changes to the entire file structure decided to use modular approach  and also screenshots and an md file describing my rationale"
+ 1296  clear
+ 1297  git push origin master
+ 1298  ls
+ 1299  ls -a
+ 1300  git pull origin master
+ 1301  git push origin master
+ 1302  clear
+ 1303  git status
+ 1304  clear
+ 1305  git pull origin master
+ 1306  git push origin master
+ 1307  clear
+ 1308  ls
+ 1309  cd Repo_Init/
+ 1310  LS
+ 1311  ls
+ 1312  ./program main.c 
+ 1313  ./program add main.c 
+ 1314  ./program add test_file.txt 
+ 1315  clear
+ 1316  ./program add test_file.txt 
+ 1317  cd ..
+ 1318  ls
+ 1319  clear
+ 1320  cd TgBot/
+ 1321  ./program init
+ 1322  ls -a 
+ 1323  ./program add file.py
+ 1324  code .
+ 1325  cd ~
+ 1326  cd Fidel/
+ 1327  ls
+ 1328  ./program init
+ 1329  rm -rf .repo
+ 1330  clear
+ 1331  ./program init
+ 1332  ls
+ 1333  ./program add file.txt 
+ 1334  code .
+ 1335  clear
+ 1336  cd ..
+ 1337  clear
+ 1338  ./program 
+ 1339  clear
+ 1340  ./program 
+ 1341  clear
+ 1342  cd Pesapal/
+ 1343  cd Repo_Init/
+ 1344  code .
+ 1345  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1346  clear
+ 1347  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1348  ls
+ 1349  clear
+ 1350  ls
+ 1351  clear
+ 1352  ./program remove file2.txt
+ 1353  ./program remove main.c
+ 1354  ./program remove file.txt
+ 1355  ./program remove file3.txt
+ 1356  clear
+ 1357  cd ..
+ 1358  ls -a
+ 1359  git status
+ 1360  git add .
+ 1361  git status
+ 1362  git commit -m "removed files from staging and deleted them successfully"
+ 1363  git push  origin master 
+ 1364  clear
+ 1365  sudo systemctl restart NetworkManager
+ 1366  ls -a
+ 1367  cd .git
+ 1368  code .
+ 1369  cd ..
+ 1370  cd Repo_Init/
+ 1371  clear
+ 1372  code .
+ 1373  echo "This file can be entred into the staging areas severally"> file.txt
+ 1374  ./program add file.txt 
+ 1375  clear
+ 1376  echo "This is the original content of the test file." > testfile.txt
+ 1377  ./program add testfile.txt
+ 1378  echo "This is the modified content of the test file." > testfile.txt
+ 1379  ./program add testfile.txt
+ 1380  clear
+ 1381  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1382  clear
+ 1383  ./program init
+ 1384  ls
+ 1385  rm testfile.txt 
+ 1386  clear
+ 1387  echo "This is the original content of the test file." > testfile.txt
+ 1388  ./program add testfile.txt 
+ 1389  clear
+ 1390  ./program add testfile.txt 
+ 1391  echo "This is the modified content of the test file." > testfile.txt
+ 1392  ./program add testfile.txt 
+ 1393  clear
+ 1394  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1395  clear
+ 1396  rm testfile.txt 
+ 1397  clear
+ 1398  echo "This is the original content of the test file." > testfile.txt
+ 1399  ./program add testfile.txt 
+ 1400  echo "This is the modified content of the test file." > testfile.txt
+ 1401  ./program add testfile.txt 
+ 1402  clear
+ 1403  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1404  clear
+ 1405  echo "This is the original content of the test file." > testfile.txt
+ 1406  ./program add testfile.txt 
+ 1407  echo "This is the modified content of the test file." > testfile.txt
+ 1408  ./program add testfile.txt 
+ 1409  ./program add main.c
+ 1410  ./program remove main.c
+ 1411  clear
+ 1412  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1413  clear
+ 1414  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1415  clear
+ 1416  ./program  remove testfile.txt 
+ 1417  clear
+ 1418  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1419  clear
+ 1420  echo "This is the original content of the test file." > testfile.txt
+ 1421  ./program add testfile.txt 
+ 1422  echo "This is the modified content of the test file." > testfile.txt
+ 1423  ./program add testfile.txt 
+ 1424  clear
+ 1425  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1426  clear
+ 1427  rm testfile.txt 
+ 1428  clear
+ 1429  echo "This is the original content of the test file." > testfile.txt
+ 1430  ./program add testfile.txt 
+ 1431  clear
+ 1432  rm testfile.txt 
+ 1433  clear
+ 1434  echo "This is the original content of the test file." > testfile.txt
+ 1435  ./program add testfile.txt 
+ 1436  clear
+ 1437  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1438  clear
+ 1439  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1440  clear
+ 1441  rm testfile.txt 
+ 1442  clear
+ 1443  l
+ 1444  echo "original">test.txt
+ 1445  ./program add test.txt 
+ 1446  clear
+ 1447  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1448  clear
+ 1449  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1450  clear
+ 1451  echo "original">test,txt
+ 1452  echo "original">test.txt
+ 1453  ./program add test.txt 
+ 1454  echo "changed file not original">test.txt
+ 1455  ./program add test.txt 
+ 1456  clear
+ 1457  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1458  clear
+ 1459  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1460  echo "This is the original files" >test.txt
+ 1461  ./program  add  test.txt
+ 1462  echo "This is the mmodifed file" >test.txt
+ 1463  ./program add test.txt
+ 1464  clear
+ 1465  sudo systemctl restart NetworkManager
+ 1466  clear
+ 1467  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1468  clear
+ 1469  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1470  ls
+ 1471  clear
+ 1472  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1473  clear
+ 1474  ./program  add test.txt
+ 1475  echo "modified changes to test file">test.txt
+ 1476  ./program add test.txt
+ 1477  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1478  clear
+ 1479  rm test.txt 
+ 1480  clear
+ 1481  echo "original text">test.txt
+ 1482  ./program add test.txt
+ 1483  echo "made changes to the test.txt" >text.txt
+ 1484  ./program add test.txt 
+ 1485  echo "made changes to the test.txt" >test.txt
+ 1486  ./program add test.txt 
+ 1487  clear
+ 1488  ls
+ 1489  gcc -o program program.c -lssl -lcrypto
+ 1490  ./program
+ 1491  gcc -o program program.c -lssl -lcrypto
+ 1492  ./program 
+ 1493  clear
+ 1494  gcc -o program program.c -lssl -lcrypto
+ 1495  ./program 
+ 1496  gcc -o program program.c -lssl -lcrypto
+ 1497  ./program 
+ 1498  gcc -o program program.c -lssl -lcrypto
+ 1499  ./program 
+ 1500  gcc -o program program.c -lssl -lcrypto
+ 1501  ./program 
+ 1502  gcc -o program program.c -lssl -lcrypto
+ 1503  ./program 
+ 1504  clear
+ 1505  ./program 
+ 1506  clear
+ 1507  gcc -o program program.c -lssl -lcrypto
+ 1508  ./program 
+ 1509  clear
+ 1510  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1511  rm -rf *.o program
+ 1512  clear
+ 1513  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1514  clear
+ 1515  ls
+ 1516  ./program add  test.txt
+ 1517  ./program add  text.txt
+ 1518  ./program add  minor.txt
+ 1519  ./program add  main.c
+ 1520  ./program add  test.txt
+ 1521  clear
+ 1522  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1523  clear
+ 1524  ./program add test.txt
+ 1525  ./program add text.txt
+ 1526  ./program add minor.txt
+ 1527  ./program add minor.txst
+ 1528  ./program add main.c
+ 1529  ./program add test.txt
+ 1530  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1531  clear
+ 1532  ./program add test.txt 
+ 1533  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1534  clear
+ 1535  gcc -Wall -g -o program main.c init.c hashing.c staging.c -lssl -lcrypto
+ 1536  clear
+ 1537  cd ..
+ 1538  rm -rf
+ 1539  ls -a
+ 1540  cd Repo_Init/
+ 1541  l
+ 1542  rm -rf Repo_Init
+ 1543  cd ..
+ 1544  rm -rf Repo_Init
+ 1545  ls
+ 1546  ls -a
+ 1547  clear
+ 1548  git clone https://github.com/PeterWanjihia/PesapalGitChallenge/tree/master/Repo_Init
+ 1549  ls
+ 1550  rm -rf Repo_Init
+ 1551  ls
+ 1552  git clone https://github.com/PeterWanjihia/PesapalGitChallenge.git Repo_Init
+ 1553  ls
+ 1554  cd Repo_Init/
+ 1555  clear
+ 1556  ls
+ 1557  git pull origin master
+ 1558  ls
+ 1559  cd Repo_Init/
+ 1560  ls
+ 1561  code .
+ 1562  ./program  add main.c
+ 1563  ./program  add init.c
+ 1564  clear
+ 1565  echo "original text" > test.txt
+ 1566  clear
+ 1567  ./program  add test.txt
+ 1568  gcc -Wall -g -o program main.c -lssl -lcrypto
+ 1569  gcc -Wall -g -o program stage.c -lssl -lcrypto
+ 1570  clear
+ 1571  ./program 
+ 1572  gcc -Wall -g -o program stage.c -lssl -lcrypto
+ 1573  clear
+ 1574  cd ..
+ 1575  code .
+ 1576  ls
+ 1577  cd Repo_Init/
+ 1578  ls
+ 1579  cd Repo_Init/
+ 1580  ls
+ 1581  cd ..
+ 1582  cd ~
+ 1583  clear
+ 1584  cd Pesapal
+ 1585  ls
+ 1586  cd Repo_Init
+ 1587  ls
+ 1588  code .
+ 1589  cd ..
+ 1590  ls -a
+ 1591  cd .git
+ 1592  ls
+ 1593  cd ..
+ 1594  clear
+ 1595  cd Repo_Init
+ 1596  ls
+ 1597  code .
+ 1598  ls
+ 1599  ./program add test.txt
+ 1600  clear
+ 1601  ./program add test.txt
+ 1602  ./program add file.txt
+ 1603  gcc -Wall -g -o program stage.c -lssl -lcrypto
+ 1604  clear
+ 1605  ./program 
+ 1606  gcc -Wall -g -o program stage.c -lssl -lcrypto
+ 1607  clear
+ 1608  ./program 
+ 1609  gcc -Wall -g -o program stage.c -lssl -lcrypto
+ 1610  ./program 
+ 1611  gcc -Wall -g -o program stage.c -lssl -lcrypto
+ 1612  ./program 
+ 1613  gcc -Wall -g -o program stage.c -lssl -lcrypto
+ 1614  clear
+ 1615  sudo systemctl restart NetworkManager
+ 1616  clear
+ 1617  gcc -Wall -g -o program stage.c -lssl -lcrypto
+ 1618  ls 
+ 1619  ./program add file.txt
+ 1620  ./program add  main.c
+ 1621  ./program add file.txt
+ 1622  clear
+ 1623  sudo systemctl restart NetworkManager
+ 1624  clear
+ 1625  gcc -Wall -g -o program stage.c -lssl -lcrypto
+ 1626  ./program add file.txt
+ 1627  ./program add main.txt
+ 1628  ./program add main.c
+ 1629  git status
+ 1630  git  add .
+ 1631  git commit -m "trying to ensure that the staging logic is consistent"
+ 1632  git push origin master
+ 1633  clear
+ 1634  ./program add main.c
+ 1635  clear
+ 1636  ./program add file.txt
+ 1637  clear
+ 1638  gcc -Wall -g -o program stage.c -lssl -lcrypto
+ 1639  echo "This is a ctually a crasy experiment">test.txt
+ 1640  clear
+ 1641  gcc -Wall -g -o program stage.c -lssl -lcrypto
+ 1642  ./program  add test.txt 
+ 1643  ./program  add file.txt
+ 1644  ./program  add test.txt 
+ 1645  ./program remove file.txt
+ 1646  ./program remove test.txt
+ 1647  ./program add file.txt
+ 1648  ./program remove file.txt
+ 1649  gcc -Wall -g -o program stage.c -lssl -lcrypto
+ 1650  clear
+ 1651  ls
+ 1652  ./program add test.txt main.c stage.c
+ 1653  ./program add test.txt main.c stage.c file.txt
+ 1654  clear
+ 1655  ./program  add file.txt test.txt
+ 1656  clear
+ 1657  touch stage.h 
+ 1658  touch test_stage.c
+ 1659  clear
+ 1660  git status
+ 1661  git  add .
+ 1662  clear
+ 1663  git add .
+ 1664  git status 
+ 1665  git commit -m "I wanna test whether staging work fully I have included test_stage file to put it together "
+ 1666  git push origin master
+ 1667  clear
+ 1668  gcc -o program test_stage.c stage.c -lssl -lcrypto
+ 1669  ./program add file.txt 
+ 1670  ./program add file.txt  test.txt main.c stage.c
+ 1671  ./program add file.txt  test.txt main.c stage.c init.h
+ 1672  clear
+ 1673  git status 
+ 1674  ./staging_test  remove file.txt
+ 1675  ./staging_test  remove main.c
+ 1676  ./staging_test  remove init.h
+ 1677  ./staging_test add file.txt  test.txt main.c stage.c init.h
+ 1678  ./staging_test  remove init.h
+ 1679  ./staging_test  remove main.c
+ 1680  ./staging_test  remove test.txt
+ 1681  ./staging_test add file.txt  test.txt main.c stage.c init.h
+ 1682  clear
+ 1683  gcc -o program test_stage.c stage.c -lssl -lcrypto
+ 1684  sudo systemctl restart NetworkManager
+ 1685  clear
+ 1686  gcc -o staged) test_stage.c stage.c -lssl -lcrypto
+ 1687  The warning you're encountering is due to the fact that the function list_staged_files is being called in test_stage.c before the compiler has seen its declaration. This is because the function list_staged_files is defined in stage.c, but test_stage.c doesn't know about it yet.
+ 1688  To resolve this, you need to declare the function list_staged_files in a header file (e.g., stage.h) and include that header file in test_stage.c. This will let the compiler know about the function before it's used.
+ 1689  Steps to fix:
+ 1690  Include stage.h in test_stage.c.
+ 1691  Example of what to do:
+ 1692  stage.h (header file)
+ 1693  If you don't already have a stage.h file, you can create it or modify your existing one. Add the following declaration to the header file:
+ 1694  c
+ 1695  ￼Copy code
+ 1696  // stage.h
+ 1697  #ifndef STAGE_H
+ 1698  #define STAGE_H
+ 1699  // Function declarations
+ 1700  void list_staged_files(void);
+ 1701  int store_in_staging_area(const char *file_path, const char *file_hash);
+ 1702  int remove_from_staging_area(const char *file_path);
+ 1703  void generate_ha<
+ 1704  >
+ 1705  `
+ 1706  '
+ 1707  clear
+ 1708  gcc -o staged_test test_stage.c stage.c -lssl -lcrypto
+ 1709  ./staged_test  add file.txt main.c test.txt 
+ 1710  ./staged_test  add init.h main.c
+ 1711  ./staged remove file.txt
+ 1712  ./staged_test  remove file.txt
+ 1713  ./staged_test  stagedlist
+ 1714  clear
+ 1715  gcc -o staged_test test_stage.c stage.c -lssl -lcrypto
+ 1716  ./staged_test  add file.txt init.h  test.txt program
+ 1717  ./staged_list remove file.txt 
+ 1718  ./staged_test remove file.txt 
+ 1719  ./staged_test add file.txt 
+ 1720  ./staged_test remove file.txt main.c
+ 1721  ./staged_test stagedlist
+ 1722  clear
+ 1723  git add .
+ 1724  git commit -m "managed to add and  remove files from the stage files and also list the staged files  "
+ 1725  clear
+ 1726  git status
+ 1727  git push origin master 
+ 1728  clear
+ 1729  ./staged_test stagedlist
+ 1730  clear
+ 1731  gcc -o program main.c init.c hashing.c stage.c -lssl -lcrypto
+ 1732  ./program init
+ 1733  ./program add file.txt stage.c test.txt main.c program
+ 1734  clear
+ 1735  ./program add file.txt stage.c test.txt main.c program
+ 1736  ./program remove file.txt stage.c test.txt main.c program
+ 1737  ./program add file.txt
+ 1738  clear
+ 1739  ./staged_list add file.txt
+ 1740  ./staged_test add file.txt
+ 1741  clear
+ 1742  ./program add file.txt 
+ 1743  ./program add file.txt  test.txt stage.c staged_test
+ 1744  clear
+ 1745  gcc -o program main.c init.c hashing.c stage.c -lssl -lcrypto
+ 1746  ./program add file.txt  test.txt stage.c staged_test
+ 1747  clear
+ 1748  ./staging_test add file.txt  test.txt stage.c staged_test
+ 1749  clear
+ 1750  gcc -o program main.c init.c hashing.c stage.c -lssl -lcrypto
+ 1751  clear
+ 1752  gcc -o program main.c init.c hashing.c stage.c -lssl -lcrypto
+ 1753  ./program add file.txt 
+ 1754  clear
+ 1755  gcc -o program main.c init.c hashing.c stage.c -lssl -lcrypt
+ 1756  ./program add file.txt  test.txt stage.c staged_test
+ 1757  ./program stagedlist
+ 1758  ./program  main.c
+ 1759  ./program  add main.c
+ 1760  ./program  add file.txt 
+ 1761  ./program remove file.txt
+ 1762  ./program remove main.c
+ 1763  ./program stagedlist
+ 1764  clear
+ 1765  git add .
+ 1766  git commit -m "a well tested and working staging"
+ 1767  git push origin master
+ 1768  clear
+ 1769  cd Pesapal/
+ 1770  ls -a
+ 1771  clear
+ 1772  git status
+ 1773  git add .
+ 1774  git commit -m "added directory 'executables' to hold compiled excutables for modularity"
+ 1775  cleat
+ 1776  clear
+ 1777  git push origin  master
+ 1778  clear
+ 1779  cd ,,
+ 1780  cd ..
+ 1781  cd Course/
+ 1782  ls
+ 1783  mkdir SpaceShooter
+ 1784  cd SpaceShooter/
+ 1785  clear
+ 1786  touch index.html style.css script.js
+ 1787  code .
+ 1788  mkdir Kiptoo
+ 1789  cd Kiptoo/
+ 1790  touch p1.py p2.py p3.py
+ 1791  code .
+ 1792  python3 p1.py 
+ 1793  python3 p2.py 
+ 1794  python3 p3.py 
+ 1795  clear
+ 1796  sudo systemctl restart NetworkManager
+ 1797  clear
+ 1798  cd Fidel
+ 1799  ls
+ 1800  ls -a
+ 1801  rm -rf .repo
+ 1802  ls
+ 1803  ./program 
+ 1804  ./program  init
+ 1805  code .
+ 1806  ./program add file.txt 
+ 1807  clear
+ 1808  cd ..
+ 1809  clear
+ 1810  sudo systemctl restart NetworkManager
+ 1811  clear
+ 1812  cd Pesapal/
+ 1813  code .
+ 1814  ls -a
+ 1815  cd .git 
+ 1816  code .
+ 1817  cd ..
+ 1818  clear
+ 1819  code .
+ 1820  git status
+ 1821  clear
+ 1822  git add .
+ 1823  git commit -m "Planning and designing the commit system so I have the documents with  design"
+ 1824  git push origin master
+ 1825  clear
+ 1826  cd Repo_Init/
+ 1827  clear
+ 1828  code .
+ 1829  ls
+ 1830  mkdir commit
+ 1831  cd ..
+ 1832  git status
+ 1833  git add .
+ 1834  git status
+ 1835  clear
+ 1836  git status
+ 1837  git commit -m "Designing the commit system for git alredefined inputs and outputs flow and the constituent functions of the commit system in git "
+ 1838  git push origin master
+ 1839  clear
+ 1840  cd ..
+ 1841  cd Pesapal/
+ 1842  cd Repo_Init/
+ 1843  cd commit/
+ 1844  gcc -o program commit_metadata.c  test_metadata.c 
+ 1845  ./program 
+ 1846  clear
+ 1847  cd ..
+ 1848  sudo systemctl restart NetworkManager
+ 1849  clear
+ 1850  sudo systemctl restart NetworkManager
+ 1851  cd ..
+ 1852  ls 
+ 1853  ls -a
+ 1854  cd Repo_Init/
+ 1855  ls
+ 1856  ls -a
+ 1857  ls
+ 1858  clear
+ 1859  ls
+ 1860  ./program add main.c
+ 1861  ./program  add stage.h
+ 1862  ./program  add test.txt 
+ 1863  ./program test.txt stage.c  staged_test
+ 1864  ./program remove test.txt stage.c  staged_test
+ 1865  ./program stagedlist
+ 1866  cd ~
+ 1867  cd NetProgramming/
+ 1868  clear
+ 1869  code .
+ 1870  source venv/bin/activate
+ 1871  ls
+ 1872  python3 venv venv
+ 1873  python3 -m venv venv
+ 1874  source venv/bin/activate
+ 1875  clear
+ 1876  touch file.py
+ 1877  python3 file.py 
+ 1878  pip install psutil
+ 1879  pip freeze
+ 1880  pip install psutil
+ 1881  python3 file.py 
+ 1882  clear
+ 1883  python3 file.py 
+ 1884  pip install requests
+ 1885  clear
+ 1886  pip install requests
+ 1887  pip freeze > requirements.txt
+ 1888  cat requirements.txt 
+ 1889  clear
+ 1890  python3 file.py 
+ 1891  clear
+ 1892  pip install subprocess
+ 1893  python3 file.py 
+ 1894  clear
+ 1895  python3 file.py 
+ 1896  clear
+ 1897  python3 file.py 
+ 1898  clear
+ 1899  python3 file.py 
+ 1900  clear
+ 1901  pip install scapy
+ 1902  clear
+ 1903  pip install scapy
+ 1904  python3 file.py 
+ 1905  sudo python3 file.py
+ 1906  pip freeze
+ 1907  csudo pip3 install scapy
+ 1908  sudo pip3 install scapy
+ 1909  clear
+ 1910  pip freeze
+ 1911  sudo python3 file.py
+ 1912  sudo pip3 install scapy
+ 1913  sudo python3 file.py
+ 1914  sudo -E
+ 1915  sudo -E python3 file.py
+ 1916  clear
+ 1917  sudo -E python3 file.py
+ 1918  which python3
+ 1919  sudo /home/moringa/NetProgramming/venv/bin/python3
+ 1920  clear
+ 1921  sudo pip3 install scapy
+ 1922  sudo /usr/bin/python3.9 -m pip install --upgrade pip
+ 1923  deactivate
+ 1924  clear
+ 1925  sudo /usr/bin/python3.9 -m pip install --upgrade pip
+ 1926  sudo pip3 uninstall scapy
+ 1927  source venv/bin/activate
+ 1928  clear
+ 1929  pip install scapy
+ 1930  pip show scapy
+ 1931  python3 file.py
+ 1932  Desktop@Peter:~/Pesapal/Repo_Init$ sudo setcap cap_net_raw=eip $(which python3)
+ 1933  [sudo] password for moringa: 
+ 1934  Failed to set capabilities on file `/usr/bin/python3' (Invalid argument)
+ 1935  The value of the capability argument is not permitted for a file. Or the file is not a regular (non-symlink) file
+ 1936  Desktop@Peter:~/Pesapal/Repo_Init$ 
+ 1937  [`
+ 1938  clear
+ 1939  sudo setcap cap_net_raw=eip $(which python3)
+ 1940  sudo setcap cap_net_raw=eip /home/moringa/NetProgramming/venv/bin/python3
+ 1941  sudo -E python3 file.py
+ 1942  clear
+ 1943  pip install nmap 
+ 1944  python3 file.py 
+ 1945  cd ~
+ 1946  cd ShellP`
+ 1947  \/
+ 1948  clear
+ 1949  cd ShellPractice/
+ 1950  ls
+ 1951  cd Step1/
+ 1952  ls
+ 1953  code .
+ 1954  ./prompt
+ 1955  ./loop 
+ 1956  clear
+ 1957  cd ..
+ 1958  cd Fidel 
+ 1959  ls
+ 1960  ls -a
+ 1961  rm -rf .repo
+ 1962  clear
+ 1963  ls
+ 1964  rm program 
+ 1965  ls
+ 1966  rm file.txt
+ 1967  python3 -m venv venv
+ 1968  source venv/bin/activate
+ 1969  clear
+ 1970  ls
+ 1971  touch scrape.py
+ 1972  pip install selenium
+ 1973  clear
+ 1974  code .
+ 1975  python3 scrape.py 
+ 1976  python3 test.py 
+ 1977  find / -name chromedriver 2>/dev/null
+ 1978  clear
+ 1979  pip install webdriver_manager
+ 1980  pip show webdriver_manager
+ 1981  clear
+ 1982  python3 scrape.py 
+ 1983  clear
+ 1984  python3 scrape.py 
+ 1985  clear
+ 1986  python3 scrape.py 
+ 1987  clear
+ 1988  python3 scrape.py 
+ 1989  clear
+ 1990  python3 scrape.py 
+ 1991  sudo systemctl restart NetworkManager 
+ 1992  clear
+ 1993  cd Pesapal 
+ 1994  cd Repo_Init/
+ 1995  code .
+ 1996  cd ..
+ 1997  cd .rep
+ 1998  cd .repo
+ 1999  cd  .git
+ 2000  code .
+ 2001  cd ..
+ 2002  cd Repo_Init/
+ 2003  cd c
+ 2004  cd commit/
+ 2005  clear
+ 2006  gcc commit_storage.c -o commit_storage -lssl -lcrypto
+ 2007  clear
+ 2008  gcc commit_storage.c commit_metadata.c -o commit_storage -lssl -lcrypto
+ 2009  ./commit_storage 
+ 2010  cd ..
+ 2011  ./commit_storage 
+ 2012  cd ..
+ 2013  cd Repo_Init/
+ 2014  cd commit/
+ 2015  clear
+ 2016  gcc commit_storage.c commit_metadata.c -o commit_storage -lssl -lcrypto
+ 2017  cd ..
+ 2018  cd commit/
+ 2019  cd ..
+ 2020  ./commit_storage 
+ 2021  cd commit/
+ 2022  gcc commit_storage.c commit_metadata.c -o commit_storage -lssl -lcrypto
+ 2023  clear
+ 2024  gcc commit_storage.c commit_metadata.c -o commit_storage -lssl -lcrypto
+ 2025  clear
+ 2026  gcc commit_storage.c commit_metadata.c -o commit_storage -lssl -lcrypto
+ 2027  clear
+ 2028  gcc commit_storage.c commit_metadata.c -o commit_storage -lssl -lcrypto
+ 2029  cd ..
+ 2030  clear
+ 2031  ./commit
+ 2032  ./commit_storage 
+ 2033  cd commit/
+ 2034  clear
+ 2035  gcc commit_storage.c commit_metadata.c -o commit_storage -lssl -lcrypto
+ 2036  clear
+ 2037  cd ..
+ 2038  ./commit_storage 
+ 2039  git status
+ 2040  git add .
+ 2041  git commit -m "added the logic that creates files stores blobs"
+ 2042  git push origin master
+ 2043  clear
+ 2044  ./program 
+ 2045  ./program add file.txt 
+ 2046  ls
+ 2047  history > file_history.txt

@@ -17,4 +17,5 @@ typedef struct {
 // Function to create the commit object with the first five parts
 void create_commit_object(Commit *commit, char *commit_message, AuthorInfo author, const char *timestamp, const char *staged_hashes);
 
+
 #endif // COMMIT_H
